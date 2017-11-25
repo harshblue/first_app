@@ -1,0 +1,35 @@
+{
+  "name": "first_app",
+  "scripts": {
+  },
+  "env": {
+    "EINSTEIN_VISION_ACCOUNT_ID": {
+      "required": true
+    },
+    "EINSTEIN_VISION_PRIVATE_KEY": {
+      "required": true
+    },
+    "EINSTEIN_VISION_URL": {
+      "required": true
+    },
+    "PAPERTRAIL_API_TOKEN": {
+      "required": true
+    },
+    "REDIS_URL": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    "einstein-vision",
+    "papertrail",
+    "heroku-postgresql",
+    "heroku-redis"
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
